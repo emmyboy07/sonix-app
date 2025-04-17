@@ -1,0 +1,211 @@
+<!-- Sonix Movies Landing Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Sonix Movies - Your ultimate free streaming platform for Nollywood, Hollywood, and Bollywood movies">
+    <title>Sonix Movies - Stream & Download Movies Free</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <style>
+        /* ... existing styles ... */
+
+        /* New styles */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-card i {
+            font-size: 2rem;
+            color: #e50914;
+            margin-bottom: 1rem;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #e50914;
+        }
+
+        .stat-label {
+            color: #ddd;
+            font-size: 0.9rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #888;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #e50914;
+        }
+
+        .loading-bar {
+            width: 200px;
+            height: 6px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            margin: 1rem auto;
+            overflow: hidden;
+        }
+
+        .loading-progress {
+            width: 70%;
+            height: 100%;
+            background: #e50914;
+            animation: loading 2s infinite;
+        }
+
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(200%); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="bg1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="logo">🎬 Sonix Movies</div>
+            <h1>Your Ultimate Movie Experience</h1>
+            <p>Stream unlimited movies & TV shows in HD quality, completely free!</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p>70,000+ Downloads and counting</p>
+            <a href="sonix-movies.apk" download class="btn">
+                <i class="fas fa-download"></i> Download APK
+            </a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="bg2">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Why Choose Sonix Movies?</h1>
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-film"></i>
+                    <h3>Vast Library</h3>
+                    <p>Access thousands of movies across all genres</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Fast Streaming</h3>
+                    <p>Buffer-free HD streaming experience</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile First</h3>
+                    <p>Optimized for all Android devices</p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Movies</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">70K+</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.8</div>
+                    <div class="stat-label">Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Movies Section -->
+    <section class="bg2">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Featured Movies</h1>
+            <p>Start watching the best movies right now</p>
+            
+            <div class="featured-movies">
+                <!-- Featured movie cards (add 3-4 cards) -->
+                <div class="movie-card featured">
+                    <!-- Use the same movie card structure as in movies.html -->
+                </div>
+            </div>
+            
+            <div class="center-btn">
+                <a href="movies.html" class="btn btn-large">
+                    <i class="fas fa-film"></i> Browse All Movies
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg3">
+        <div class="overlay"></div>
+        <div class="content subscribe">
+            <h1>Join Our Community</h1>
+            <p>Get notified about new releases and app updates!</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit" class="btn">
+                    <i class="fas fa-paper-plane"></i> Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+        <p>© 2025 Sonix Movies. Built for movie lovers, by movie lovers.</p>
+    </div>
+
+    <script>
+        // Simple form handling
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thanks for subscribing! We\'ll keep you updated.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
